@@ -1,0 +1,40 @@
+html{
+    background-color: black;
+}
+.container{
+    margin: 20px;
+    padding: 10px;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin: 20px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    color: white;
+    font-family: 'Noto Serif';
+}
+
+h3{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Noto Serif';
+}
+
+.box{
+    font-size: 20px;
+    height: 20vh;
+    width: 60vw;
+    margin: 20px;
+    margin-left: 0;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-family: Raleway;
+}
+
+@media screen and (max-width : 600px){
+    .box{
+        height: fit-content;
+    }
+}

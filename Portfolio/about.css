@@ -1,0 +1,78 @@
+html{
+    background-color: rgb(54, 52, 52);
+}
+.about{
+    background-color: black;
+    height: 60vh;
+    width: 60vw;;
+    margin-left: 2rem;
+    color: white;
+}
+
+.about img{
+    float: left;
+    margin: 2rem 2rem 2rem 3rem;
+}
+
+p{
+    position: relative;
+    margin : 3rem 3rem 2rem 2rem;
+    font-size: 25px;
+    font-family: Raleway;
+    top: 10vh;
+}
+
+.about ul{
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.about ul li{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    font: 1.5rem sans-serif;
+}
+
+.font{
+    font-family: Raleway;
+}
+
+.heading{
+    font-size: 2rem;
+    color: yellow;
+    text-decoration-line:underline;
+    margin-top: 2rem;
+    padding: 10px;
+}
+
+@media screen and (max-width : 600px){
+    .about{
+        height: fit-content;
+        width: fit-content;
+        margin-top: 20px;
+    }
+    .about img{
+        float: unset;
+        margin-left: 0;
+        padding: 40px;
+    }
+    .about ul{
+        margin-left: 0;
+    }
+    .about p{
+        display: block;
+        position:static;
+        margin-left: 0;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-bottom: 20px;
+    }
+    #skills{
+        height: fit-content;
+        padding: 10px;
+        padding-left: 0;
+    }
+}

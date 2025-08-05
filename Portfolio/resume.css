@@ -1,0 +1,17 @@
+html{
+    background-color: black;
+}
+.image img{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.nav{
+    background-color: white;
+    width: 1000px;
+}
+
+@media screen and (max-width : 600px){
+    .image img{
+        height: 500px;
+    }
+}
