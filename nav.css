@@ -1,0 +1,95 @@
+.nav{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.search-input{
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    width: 25vw;
+    height: 4vh;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-left: 5rem;
+}
+
+#menu-toggle {
+      display: none;
+    }
+
+.hamburger {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+}
+
+.headbar{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    flex-shrink: calc();
+}
+
+li{
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+}
+
+@media screen and (max-width : 600px){
+    .nav{
+        width: 138vw;
+        height: fit-content;
+    }
+    .headbar{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+      }
+
+    .headbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 200px;
+      }
+
+    .headbar li{
+        color: white;
+    }
+
+    #menu-toggle:checked + .hamburger + .headbar {
+        display: flex;
+        color: white;
+    }
+}
